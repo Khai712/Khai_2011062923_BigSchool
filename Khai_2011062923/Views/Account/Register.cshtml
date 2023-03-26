@@ -19,23 +19,29 @@
             </div>
         </div>
         <div class="row">
-            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 col-form-label" })
             <div class="col-md-10">
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
             </div>
         </div>
-        <div class="row">
-            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
-                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            <div class="row">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-2 col-md-10">
-                <input type="submit" value="Register" class="btn btn-outline-dark" />
+            <div class="row">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                </div>
             </div>
-        </div>
-    }
+            <div class="row">
+                <div class="offset-md-2 col-md-10">
+                    <input type="submit" value="Register" class="btn btn-outline-dark" />
+                </div>
+            </div>
+            }
 </main>
 
 @section Scripts {
